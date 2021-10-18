@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>registrarCV</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Application-Form.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="text-center text-capitalize">Registrar Datos Curriculum<br><br></h1>
+        <div class="container">
+            <form id="application-form" action="/regresando" method="POST"  >
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <p><strong>Nombres</strong></p><input class="form-control" type="text" required="" name="varNombres"  value="{{varNombres}}"   placeholder=""></div>
+                        <div class="col">
+                            <p><strong>Primer Apellido</strong><span class="text-danger">*</span></p><input class="form-control"     type="text" required="" name="varApe1"  value="{{varApe1}}"     placeholder=""></div>
+                        <div class="col">
+                            <p><strong>Segundo Apellido</strong></p><input class="form-control" type="text" required="" name="varApe2" value="{{varApe2}}"   placeholder=""></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <p><strong>Fecha de Nacimiento</strong></p><input class="form-control" type="date" required="" name="varFecNac" value="{{varFecNac}}" ></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p><strong>Email&nbsp;</strong><span class="text-danger">*</span></p><input class="form-control" type="email" name="varEmail" value="{{varEmail}}" placeholder="usu@domain.com"></div>
+                <div class="form-group">
+                    <p><strong>Número Celular</strong></p><input class="form-control" type="number" name="varNumCel" value="{{varNumCel}}" placeholder=""></div>
+                <div class="form-group">
+                    <p><strong>DNI:</strong></p><input class="form-control" type="text" name="varDNI" value="{{varDNI}}" placeholder=""></div>
+                <div class="form-group">
+                    <p><strong>Dirección</strong></p><input class="form-control" type="text" required="" name="varDir" value="{{varDir}}" placeholder=""></div>
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col">
+                            <p>Ciudad</p><input class="form-control" type="text" required="" name="varCiu" value="{{varCiu}}" placeholder=""></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col">
+                        <p><strong>Resumen o Presentacion</strong></p>
+        <textarea class="form-control-plaintext" " required="" type="text"   name="varResumen" placeholder=""  rows="10" cols="70" >  {{varResumen}}     </textarea> </div>
+                    <div class="col">
+                        <p><strong>Experiencia Laboral</strong></p>
+       <textarea  class="form-control-plaintext"  required="" name="varExperiencia" placeholder=""  rows="10" cols="70" > {{varExperiencia}}  </textarea>  </div>
+                    <div class="col">
+                        <p><strong>Estudios</strong></p>
+     <textarea  class="form-control-plaintext"  required="" name="varEstudios"  placeholder=""  rows="10"  cols="70"  > {{varEstudios}}   </textarea>    </div>
+                    <div class="col">
+                        <p><strong>Logros</strong></p>
+     <textarea  class="form-control-plaintext"  required="" name="varlogros" placeholder=""  rows="10" cols="70" > {{varLogros}}  </textarea>  </div>
+                    <div class="col">
+                        <p><strong>Habilidades</strong></p>
+    <textarea  class="form-control-plaintext"  required="" name="varHabilidades" placeholder=""  rows="10" cols="70" > {{varHabilidades}}   </textarea> </div>
+                    <div class="col">
+                        <p><strong>Intereses</strong></p>
+   <textarea   class="form-control-plaintext"  required="" name="varintereses" placeholder=""   rows="10" cols="70" > {{varintereses}}   </textarea>  </div>
+                    <div class="col">
+                        <p><strong>Referencias</strong></p>
+   <textarea class="form-control-plaintext"  required="" name="varreferencias" placeholder=""  rows="10" cols="70" >  {{varreferencias}} </textarea>   </div>
+                </div>
+                <div class="form-group justify-content-center d-flex">
+                    <div id="submit-btn">
+                        <div class="form-row"><button class="btn btn-primary btn-light m-0 rounded-pill px-4" type="submit" style="min-width: 500px;"  target="hidden_iframe">Enviar</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+     </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Application-Form-1.js"></script>
+    <script src="assets/js/Application-Form.js"></script>
+</body>
+
+</html>
